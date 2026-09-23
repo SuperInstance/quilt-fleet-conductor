@@ -74,6 +74,11 @@ WORKFLOWS = {
         Step("quilt-canon-witness", ["stats"], "Show witness log statistics"),
         Step("quilt-canon-witness", ["verify"], "Verify witness chain integrity"),
     ],
+    "trace": [
+        Step("quilt-canon-trace", ["stats"], "Show canon graph stats"),
+        Step("quilt-canon-trace", ["walk", "--start", "11_canon_that_runs", "--steps", "8", "--seed", "42", "--mode", "weight"], "Walk canon for 8 steps"),
+        Step("quilt-canon-trace", ["summary"], "Summarize the trace"),
+    ],
 }
 
 

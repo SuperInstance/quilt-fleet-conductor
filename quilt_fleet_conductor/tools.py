@@ -58,6 +58,7 @@ def _infer_description(name: str) -> str:
         "quilt-canon-gen": "ZAI canon generation",
         "quilt-canon-iterator": "Self-improving canon iteration",
         "quilt-canon-witness": "Cryptographic witness log — append-only ledger for canon events",
+        "quilt-canon-trace": "Substrate walker trajectory — walks canon, visualizes path",
         "quilt-multi-oracle": "Multi-model JEV chord",
     }.get(name, f"{name}")
 

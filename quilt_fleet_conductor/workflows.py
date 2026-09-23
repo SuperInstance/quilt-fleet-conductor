@@ -67,6 +67,12 @@ WORKFLOWS = {
         Step("quilt-canon-search", ["query", "substrate"], "Verify substrate canon is searchable"),
         Step("quilt-canon-graph", ["build"], "Verify graph builds"),
         Step("quilt-canon-book", ["summary"], "Verify book compiles"),
+        Step("quilt-canon-witness", ["verify"], "Verify witness chain integrity"),
+    ],
+    "witness": [
+        Step("quilt-canon-search", ["query", "substrate walker"], "Find substrate walker canon"),
+        Step("quilt-canon-witness", ["stats"], "Show witness log statistics"),
+        Step("quilt-canon-witness", ["verify"], "Verify witness chain integrity"),
     ],
 }
 
